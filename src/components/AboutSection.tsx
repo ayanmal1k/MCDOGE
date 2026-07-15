@@ -87,8 +87,8 @@ function CanvasMorphIcon({
         jumpsLetter.push(false);
         continue;
       }
-      const distIcon = ptsIcon.length > i ? Math.hypot(ptsIcon[i].x - ptsIcon[i-1].x, ptsIcon[i].y - ptsIcon[i-1].y) : 0;
-      const distLetter = ptsLetter.length > i ? Math.hypot(ptsLetter[i].x - ptsLetter[i-1].x, ptsLetter[i].y - ptsLetter[i-1].y) : 0;
+      const distIcon = ptsIcon.length > i ? Math.hypot(ptsIcon[i].x - ptsIcon[i - 1].x, ptsIcon[i].y - ptsIcon[i - 1].y) : 0;
+      const distLetter = ptsLetter.length > i ? Math.hypot(ptsLetter[i].x - ptsLetter[i - 1].x, ptsLetter[i].y - ptsLetter[i - 1].y) : 0;
 
       jumpsIcon.push(distIcon > 20);
       jumpsLetter.push(distLetter > 20);
@@ -141,7 +141,7 @@ function CanvasMorphIcon({
     ctx.fill();
 
     // Add subtle border glow
-    ctx.strokeStyle = "rgba(221, 16, 33, 0.3)";
+    ctx.strokeStyle = "rgba(0, 0, 0, 0.2)";
     ctx.lineWidth = 1.2;
     ctx.stroke();
   }, [progress, isHovered]);
@@ -160,16 +160,16 @@ function CanvasMorphIcon({
           justify-content: center;
           width: 58px;
           height: 58px;
-          background: rgba(255, 255, 255, 0.03);
-          border: 1px solid rgba(255, 255, 255, 0.06);
+          background: rgba(0, 0, 0, 0.15);
+          border: 1px solid rgba(0, 0, 0, 0.12);
           border-radius: 14px;
           transition: all 0.3s ease;
         }
 
         .morph-canvas-container:hover {
-          background: rgba(255, 199, 0, 0.06);
-          border-color: rgba(255, 199, 0, 0.3);
-          box-shadow: 0 0 15px rgba(255, 199, 0, 0.1);
+          background: rgba(0, 0, 0, 0.3);
+          border-color: rgba(255, 199, 0, 0.4);
+          box-shadow: 0 0 15px rgba(255, 199, 0, 0.2);
           transform: scale(1.05);
         }
 
@@ -260,7 +260,7 @@ export default function AboutSection() {
       <div className="about-grid">
         {/* Left Column - 6 Features in 6 Rows */}
         <div className="about-left">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -272,7 +272,7 @@ export default function AboutSection() {
 
           <div className="features-list">
             {features.map((feature, idx) => (
-              <motion.div 
+              <motion.div
                 key={`feature-${idx}`}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -281,7 +281,7 @@ export default function AboutSection() {
                 className="feature-row"
               >
                 <div className="feature-icon-col">
-                  <CanvasMorphIcon 
+                  <CanvasMorphIcon
                     letter={feature.letter}
                     iconPath={feature.iconPath}
                     letterPath={feature.letterPath}
@@ -299,11 +299,11 @@ export default function AboutSection() {
 
         {/* Right Column - Full Bleed MCDelivery Video */}
         <div className="about-right">
-          <video 
+          <video
             src="/mcdelivery.webm"
-            autoPlay 
-            loop 
-            muted 
+            autoPlay
+            loop
+            muted
             playsInline
             className="about-video"
           />
