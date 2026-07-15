@@ -47,7 +47,7 @@ export default function Navbar() {
           {/* Logo + Name */}
           <div className="navbar-logo-container" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
             <img
-              src="/logo.jpg"
+              src="/logo.png"
               alt="MCDOGE Logo"
               style={{
                 width: 36,
@@ -72,7 +72,7 @@ export default function Navbar() {
           {/* Buy Button */}
           <div className="nav-buy-desktop">
             <Magnetic>
-              <a href="https://dexscreener.com/solana/9fQdMbjsYg7vNjnXULwzdmoCS4napNoWya5ZF7YAfhaa" target="_blank" rel="noopener noreferrer" className="btn-buy-nav">
+              <a href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz" target="_blank" rel="noopener noreferrer" className="btn-buy-nav">
                 BUY $MCDOGE
               </a>
             </Magnetic>
@@ -103,7 +103,7 @@ export default function Navbar() {
                 <a href="#" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
                 <a href="#about" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>About</a>
                 <a href="#tokenomics" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>Tokenomics</a>
-                <a href="https://dexscreener.com/solana/9fQdMbjsYg7vNjnXULwzdmoCS4napNoWya5ZF7YAfhaa" target="_blank" rel="noopener noreferrer" className="btn-buy-nav-mobile" onClick={() => setIsMobileMenuOpen(false)}>
+                <a href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz" target="_blank" rel="noopener noreferrer" className="btn-buy-nav-mobile" onClick={() => setIsMobileMenuOpen(false)}>
                   BUY $MCDOGE
                 </a>
               </nav>

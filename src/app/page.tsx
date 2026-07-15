@@ -5,6 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, CheckCircle2, Copy } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/AboutSection";
+import RoadmapSection from "@/components/RoadmapSection";
+import HowToBuySection from "@/components/HowToBuySection";
+import ChartSection from "@/components/ChartSection";
+import SocialsSection from "@/components/SocialsSection";
 
 // --- Inline Social SVGs ---
 function XIcon() {
@@ -230,7 +234,7 @@ export default function Home() {
   const [isCaHovered, setIsCaHovered] = useState(false);
 
   const copyCA = () => {
-    navigator.clipboard.writeText("9fQdMbjsYg7vNjnXULwzdmoCS4napNoWya5ZF7YAfhaa");
+    navigator.clipboard.writeText("9fQdMbjsYg7vNjnXULwzdmoCS4napNoWya5Zf7YAfhaa");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -368,8 +372,8 @@ export default function Home() {
               <motion.h1 variants={itemVariants} className="hero-title">
                 <span className="text-highlight hero-bouncy-logo-wrapper">
                   {!isLoading && "MCDOGE".split("").map((letter, idx) => (
-                    <motion.span 
-                      key={`hero-char-${idx}`} 
+                    <motion.span
+                      key={`hero-char-${idx}`}
                       layoutId={`char-${idx}`}
                       className="hero-bouncy-letter"
                       style={{ transitionDelay: `${idx * 0.02}s` }}
@@ -406,7 +410,7 @@ export default function Home() {
                   </a>
                 </Magnetic>
                 <Magnetic>
-                  <a href="https://dexscreener.com/solana/9fQdMbjsYg7vNjnXULwzdmoCS4napNoWya5ZF7YAfhaa" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                  <a href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz" target="_blank" rel="noopener noreferrer" className="btn-secondary">
                     CHART
                   </a>
                 </Magnetic>
@@ -428,8 +432,8 @@ export default function Home() {
                   )}
                 </AnimatePresence>
 
-                <motion.div 
-                  variants={itemVariants} 
+                <motion.div
+                  variants={itemVariants}
                   onMouseEnter={() => setIsCaHovered(true)}
                   onMouseLeave={() => setIsCaHovered(false)}
                   onClick={copyCA}
@@ -458,11 +462,11 @@ export default function Home() {
                         exit={{ opacity: 0, y: 8 }}
                         className="ca-address"
                       >
-                        9fQdMbjsYg7vNjnXULwzdmoCS4napNoWya5ZF7YAfhaa
+                        9fQdMbjsYg7vNjnXULwzdmoCS4napNoWya5Zf7YAfhaa
                       </motion.span>
                     )}
                   </AnimatePresence>
-                  
+
                   <button className="ca-copy-btn" aria-label="Copy contract address" onClick={(e) => e.stopPropagation()}>
                     <AnimatePresence mode="wait">
                       {copied ? (
@@ -503,7 +507,7 @@ export default function Home() {
                 <a href="https://t.me/McdogeSolana" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Telegram">
                   <TelegramIcon />
                 </a>
-                <a href="https://dexscreener.com/solana/9fQdMbjsYg7vNjnXULwzdmoCS4napNoWya5ZF7YAfhaa" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Dexscreener">
+                <a href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Dexscreener">
                   <img src="/decscreenr logo.png" alt="Dexscreener" style={{ width: 22, height: 22, objectFit: "contain" }} />
                 </a>
               </motion.div>
@@ -517,6 +521,18 @@ export default function Home() {
 
       {/* About Section */}
       <AboutSection />
+
+      {/* Roadmap Section */}
+      <RoadmapSection />
+
+      {/* How To Buy Section */}
+      <HowToBuySection />
+
+      {/* Live Chart & Stats Section */}
+      <ChartSection />
+
+      {/* Social Links Section */}
+      <SocialsSection />
 
       {/* CSS Styles */}
       <style jsx global>{`
