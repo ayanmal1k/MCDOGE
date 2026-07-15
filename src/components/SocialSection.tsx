@@ -85,11 +85,11 @@ export default function SocialSection() {
           </p>
 
           <div className="social-buttons-wrapper">
-            <a href="https://x.com/mcgooglescoin?s=11&t=9A8TB5U2jYixpYBhO1V8Fg" target="_blank" rel="noopener noreferrer" className="social-btn btn-x" aria-label="X Twitter">
+            <a href="https://x.com/mcdogeintern1?s=11" target="_blank" rel="noopener noreferrer" className="social-btn btn-x" aria-label="X Twitter">
               <XIcon />
               <span>TWITTER</span>
             </a>
-            <a href="https://t.me/Mcgooglescoin" target="_blank" rel="noopener noreferrer" className="social-btn btn-tg" aria-label="Telegram">
+            <a href="https://t.me/ysctop" target="_blank" rel="noopener noreferrer" className="social-btn btn-tg" aria-label="Telegram">
               <TelegramIcon />
               <span>TELEGRAM</span>
             </a>

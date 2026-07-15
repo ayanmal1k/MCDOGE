@@ -23,7 +23,36 @@ const mazin = localFont({
 
 export const metadata: Metadata = {
   title: "MCDOGE — The Meme That Serves Smiles",
-  description: "A community-driven meme token on Solana.",
+  description: "Get your uniform ready and join the delivery fleet. MCDOGE is a community-driven meme token on Solana cooking up the freshest memes and locked liquidity.",
+  keywords: ["MCDOGE", "Solana memecoin", "McDonalds Doge", "sol memecoin", "locked liquidity", "crypto meme"],
+  openGraph: {
+    title: "MCDOGE — The Meme That Serves Smiles",
+    description: "Get your uniform ready and join the delivery fleet. MCDOGE is a community-driven meme token on Solana cooking up the freshest memes and locked liquidity.",
+    url: "https://mcdoge.xyz",
+    siteName: "MCDOGE",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "MCDOGE Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MCDOGE — The Meme That Serves Smiles",
+    description: "Get your uniform ready and join the delivery fleet. MCDOGE is a community-driven meme token on Solana cooking up the freshest memes and locked liquidity.",
+    images: ["/logo.png"],
+    creator: "@mcdogeintern1",
+  },
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

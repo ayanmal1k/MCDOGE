@@ -1,207 +1,235 @@
 "use client";
 
+import { Send } from "lucide-react";
+
 export default function Footer() {
-  const links = [
-    { label: "Home", href: "#" },
-    { label: "Ecosystem", href: "#roadmap" }, // Anchor link to top InfoSection / perks
-    { label: "Tokenomics", href: "#tokenomics" },
-    { label: "Utility", href: "#perks" },
-    { label: "Order Flow", href: "#roadmap" },
-  ];
-
-  const logoLetters = "MCGOOGLES".split("");
-
   return (
-    <footer className="bouncy-footer">
-      <div className="footer-line-top" />
-      
-      <div className="container footer-content">
-        {/* Left Side: Bouncy Logo */}
-        <div className="footer-logo-block">
-          <div className="bouncy-logo-wrapper">
-            {logoLetters.map((letter, idx) => (
-              <span 
-                key={idx} 
-                className="bouncy-letter"
-                style={{ transitionDelay: `${idx * 0.02}s` }}
-              >
-                {letter}
-              </span>
-            ))}
+    <footer className="footer-section">
+      <div className="footer-inner">
+        {/* Left Column: Brand Name & Logo */}
+        <div className="footer-left">
+          <div className="footer-brand">
+            <img
+              src="/logo.png"
+              alt="MCDOGE Logo"
+              className="footer-logo"
+            />
+            <span className="footer-brand-name footer-bouncy-logo-wrapper">
+              {"MCDOGE".split("").map((letter, idx) => (
+                <span
+                  key={`footer-char-${idx}`}
+                  className="footer-bouncy-letter"
+                  style={{ transitionDelay: `${idx * 0.02}s` }}
+                >
+                  {letter}
+                </span>
+              ))}
+            </span>
           </div>
-          <span className="logo-badge-caption">THE BURGER EMPIRE</span>
         </div>
 
-        {/* Right Side: Navigation links with bounce transitions */}
-        <div className="footer-links-block">
-          {links.map((link, idx) => (
-            <a 
-              key={idx} 
-              href={link.href} 
-              className="bouncy-footer-link"
+        {/* Middle Column: Social Buttons */}
+        <div className="footer-middle">
+          <div className="footer-socials">
+            {/* Telegram */}
+            <a
+              href="https://t.me/ysctop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-social-btn"
+              aria-label="Telegram"
             >
-              {link.label}
+              <Send size={16} />
             </a>
-          ))}
-        </div>
-      </div>
 
-      {/* Bottom Row: Copyright text and design credits */}
-      <div className="footer-bottom-bar container">
-        <p className="copyright-text">
-          &copy; 2026 MCGOOGLES. All rights reserved.
-        </p>
-        <span className="disclaimer-text">
-          DISCLAIMER: $MCGOOGLES is a meme token for entertainment purposes. No financial yields guaranteed.
-        </span>
+            {/* Twitter / X */}
+            <a
+              href="https://x.com/mcdogeintern1?s=11"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-social-btn"
+              aria-label="Twitter / X"
+            >
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+
+            {/* DexScreener */}
+            <a
+              href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-social-btn dex-btn"
+              aria-label="DexScreener"
+            >
+              <img
+                src="/decscreenr logo.png"
+                alt="DexScreener"
+                className="footer-dex-logo"
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Right Column: Copyright */}
+        <div className="footer-right">
+          <p className="footer-copyright">
+            &copy; {new Date().getFullYear()} MCDOGE. All rights reserved.
+          </p>
+        </div>
       </div>
 
       <style jsx global>{`
-        .bouncy-footer {
+        .footer-section {
+          background-color: #050505;
+          color: #ffffff;
+          border-top: 1px solid rgba(255, 255, 255, 0.05);
+          padding: 40px 6%;
           position: relative;
           z-index: 10;
-          padding-top: var(--space-8);
-          padding-bottom: var(--space-6);
-          background: #040404;
-          width: 100%;
         }
 
-        .footer-line-top {
-          height: 1px;
-          background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.05) 80%, transparent 100%);
-          width: 100%;
-          margin-bottom: var(--space-6);
-        }
-
-        .footer-content {
+        .footer-inner {
+          max-width: 1440px;
+          margin: 0 auto;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: var(--space-8);
-          flex-wrap: wrap;
-          gap: var(--space-5);
+          width: 100%;
         }
 
-        /* Bouncy Logo styling */
-        .footer-logo-block {
+        /* Left Side: Brand Logo and Text */
+        .footer-left {
           display: flex;
-          flex-direction: column;
-          align-items: flex-start;
+          align-items: center;
         }
 
-        .bouncy-logo-wrapper {
+        .footer-brand {
           display: flex;
-          cursor: pointer;
+          align-items: center;
+          gap: 12px;
         }
 
-        .bouncy-letter {
+        .footer-logo {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-bouncy-logo-wrapper {
           display: inline-block;
-          font-family: var(--font-display), sans-serif;
-          font-size: 2.5rem;
-          font-weight: 900;
+          white-space: nowrap;
+          cursor: pointer;
+          transform: rotate(-3deg) skewX(-6deg);
+          transform-origin: left center;
+        }
+
+        .footer-bouncy-letter {
+          display: inline-block;
+          font-family: var(--font-mazin), var(--font-display), sans-serif;
+          font-size: 1.35rem;
+          font-weight: 950;
           color: #ffffff;
-          letter-spacing: -0.02em;
-          text-transform: uppercase;
           transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.35), color 0.3s ease;
         }
 
-        .bouncy-logo-wrapper:hover .bouncy-letter {
-          transform: translateY(-8px) scale(1.1) rotate(4deg);
-          color: #FFC700;
+        .footer-bouncy-logo-wrapper:hover .footer-bouncy-letter {
+          transform: translateY(-4px) scale(1.08) rotate(4deg);
+          color: #FFE054;
         }
 
-        /* Delay letter bounce effect to create a waving wave */
-        .bouncy-letter:hover {
-          transform: translateY(-12px) scale(1.25) rotate(-6deg) !important;
+        .footer-bouncy-letter:hover {
+          transform: translateY(-8px) scale(1.22) rotate(-6deg) !important;
           color: #DD1021 !important;
         }
 
-        .logo-badge-caption {
-          font-family: monospace;
-          font-size: 0.65rem;
-          color: var(--text-secondary);
-          letter-spacing: 0.35em;
-          font-weight: 700;
-          margin-top: 4px;
-        }
-
-        /* Navigation links */
-        .footer-links-block {
+        /* Middle Side: Social Circles */
+        .footer-middle {
           display: flex;
-          gap: var(--space-5);
-          flex-wrap: wrap;
-        }
-
-        .bouncy-footer-link {
-          font-family: var(--font-body), sans-serif;
-          font-size: 0.9rem;
-          font-weight: 700;
-          color: var(--text-secondary);
-          transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.35), color 0.3s ease;
-        }
-
-        .bouncy-footer-link:hover {
-          transform: translateY(-4px) scale(1.05);
-          color: #FFC700;
-        }
-
-        /* Bottom Copyright row */
-        .footer-bottom-bar {
-          display: flex;
-          justify-content: space-between;
+          justify-content: center;
           align-items: center;
-          flex-wrap: wrap;
-          gap: var(--space-3);
-          border-top: 1px solid rgba(255, 255, 255, 0.03);
-          padding-top: var(--space-4);
         }
 
-        .copyright-text {
-          font-size: 0.82rem;
-          color: var(--text-secondary);
+        .footer-socials {
+          display: flex;
+          align-items: center;
+          gap: 14px;
         }
 
-        .disclaimer-text {
-          font-family: monospace;
-          font-size: 0.65rem;
-          color: rgba(255, 255, 255, 0.2);
-          max-width: 500px;
+        .footer-social-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, 0.04);
+          color: #a0a0a5;
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+          outline: none;
+          text-decoration: none !important;
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        .footer-social-btn *,
+        .footer-social-btn:focus,
+        .footer-social-btn:active {
+          outline: none !important;
+          box-shadow: none !important;
+          text-decoration: none !important;
+        }
+
+        .footer-social-btn:hover {
+          background-color: #FFC700;
+          color: #000000;
+          border-color: #FFC700;
+          transform: scale(1.08);
+        }
+
+        .footer-dex-logo {
+          width: 16px;
+          height: 16px;
+          object-fit: contain;
+          transition: filter 0.3s ease;
+        }
+
+        .footer-social-btn.dex-btn:hover .footer-dex-logo {
+          filter: brightness(0);
+        }
+
+        /* Right Side: Copyright text */
+        .footer-right {
           text-align: right;
         }
 
-        /* Responsive adaptations */
-        @media (max-width: 768px) {
-          .footer-content {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: var(--space-6);
-          }
-
-          .footer-links-block {
-            flex-direction: column;
-            gap: var(--space-3);
-          }
-
-          .footer-bottom-bar {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: var(--space-2);
-          }
-
-          .disclaimer-text {
-            text-align: left;
-            max-width: 100%;
-            word-break: break-word;
-          }
+        .footer-copyright {
+          font-family: var(--font-body), sans-serif;
+          font-size: 0.85rem;
+          color: #707075;
+          margin: 0;
         }
 
-        @media (max-width: 576px) {
-          .bouncy-letter {
-            font-size: 1.8rem;
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+          .footer-inner {
+            flex-direction: column;
+            gap: 24px;
+            text-align: center;
           }
-          .disclaimer-text {
-            font-size: 0.6rem;
-            line-height: 1.4;
+
+          .footer-left,
+          .footer-middle,
+          .footer-right {
+            justify-content: center;
+            text-align: center;
+          }
+
+          .footer-right {
+            order: 3;
           }
         }
       `}</style>

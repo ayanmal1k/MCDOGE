@@ -18,7 +18,7 @@ export default function SocialsSection() {
       id: 0,
       name: "TELEGRAM",
       subtitle: "Join the official crew chatroom",
-      url: "https://t.me/McdogeSolana",
+      url: "https://t.me/ysctop",
       colorClass: "telegram",
       icon: <Send size={22} />,
     },
@@ -26,7 +26,7 @@ export default function SocialsSection() {
       id: 1,
       name: "X / TWITTER",
       subtitle: "Follow us for viral fast-food memes",
-      url: "https://x.com/mcdogecoin",
+      url: "https://x.com/mcdogeintern1?s=11",
       colorClass: "twitter",
       icon: (
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
@@ -73,7 +73,7 @@ export default function SocialsSection() {
   };
 
   return (
-    <section className="socials-section" id="socials">
+    <section className="socials-section" id="community">
       <div className="socials-inner">
         <div className="socials-grid">
           {/* Left Column: Looping Video */}
@@ -336,7 +336,6 @@ export default function SocialsSection() {
 
           .video-card-container {
             max-width: 100%;
-            aspect-ratio: 16/10;
           }
 
           .socials-content-column {

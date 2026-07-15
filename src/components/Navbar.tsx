@@ -66,7 +66,9 @@ export default function Navbar() {
           <nav className="nav-links">
             <a href="#" className="nav-link">Home</a>
             <a href="#about" className="nav-link">About</a>
-            <a href="#tokenomics" className="nav-link">Tokenomics</a>
+            <a href="#roadmap" className="nav-link">Roadmap</a>
+            <a href="#chart" className="nav-link">Chart</a>
+            <a href="#community" className="nav-link">Community</a>
           </nav>
 
           {/* Buy Button */}
@@ -102,7 +104,9 @@ export default function Navbar() {
               <nav className="nav-links-mobile">
                 <a href="#" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>Home</a>
                 <a href="#about" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>About</a>
-                <a href="#tokenomics" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>Tokenomics</a>
+                <a href="#roadmap" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>Roadmap</a>
+                <a href="#chart" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>Chart</a>
+                <a href="#community" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>Community</a>
                 <a href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz" target="_blank" rel="noopener noreferrer" className="btn-buy-nav-mobile" onClick={() => setIsMobileMenuOpen(false)}>
                   BUY $MCDOGE
                 </a>

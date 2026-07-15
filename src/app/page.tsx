@@ -9,6 +9,7 @@ import RoadmapSection from "@/components/RoadmapSection";
 import HowToBuySection from "@/components/HowToBuySection";
 import ChartSection from "@/components/ChartSection";
 import SocialsSection from "@/components/SocialsSection";
+import Footer from "@/components/Footer";
 
 // --- Inline Social SVGs ---
 function XIcon() {
@@ -239,6 +240,11 @@ export default function Home() {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const handleVideoEnded = () => {
+    setIsLoading(false);
+    document.body.style.overflow = "";
+  };
+
   useEffect(() => {
     // Lock scroll during loading
     document.body.style.overflow = "hidden";
@@ -247,10 +253,11 @@ export default function Home() {
       setIsEntering(false);
     }, 1200);
 
+    // Safety fallback timer (8 seconds max)
     const loadTimer = setTimeout(() => {
       setIsLoading(false);
       document.body.style.overflow = "";
-    }, 2500);
+    }, 8000);
 
     return () => {
       clearTimeout(enterTimer);
@@ -331,20 +338,15 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
             className="loader-overlay"
           >
-            <div className="loader-text-wrapper">
-              {"MCDOGE".split("").map((letter, idx) => (
-                <motion.span
-                  key={`loader-char-${idx}`}
-                  layoutId={`char-${idx}`}
-                  className="loader-letter"
-                  variants={loaderLetterVariants}
-                  initial="initial"
-                  animate={isEntering ? "enter" : "wave"}
-                  custom={idx}
-                >
-                  {letter}
-                </motion.span>
-              ))}
+            <div className="loader-video-wrapper">
+              <video
+                src="/takeaway.webm"
+                autoPlay
+                muted
+                playsInline
+                onEnded={handleVideoEnded}
+                className="loader-video"
+              />
             </div>
           </motion.div>
         )}
@@ -404,13 +406,13 @@ export default function Home() {
               {/* Buttons Row */}
               <motion.div variants={itemVariants} className="hero-buttons">
                 <Magnetic>
-                  <a href="https://t.me/McdogeSolana" target="_blank" rel="noopener noreferrer" className="btn-primary">
+                  <a href="#community" className="btn-primary">
                     JOIN COMMUNITY
                     <ArrowUpRight size={18} />
                   </a>
                 </Magnetic>
                 <Magnetic>
-                  <a href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                  <a href="#chart" className="btn-secondary">
                     CHART
                   </a>
                 </Magnetic>
@@ -501,10 +503,10 @@ export default function Home() {
 
               {/* Social Circle Links */}
               <motion.div variants={itemVariants} className="social-links">
-                <a href="https://x.com/mcdogecoin" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="X (Twitter)">
+                <a href="https://x.com/mcdogeintern1?s=11" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="X (Twitter)">
                   <XIcon />
                 </a>
-                <a href="https://t.me/McdogeSolana" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Telegram">
+                <a href="https://t.me/ysctop" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Telegram">
                   <TelegramIcon />
                 </a>
                 <a href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Dexscreener">
@@ -533,6 +535,9 @@ export default function Home() {
 
       {/* Social Links Section */}
       <SocialsSection />
+
+      {/* Footer Section */}
+      <Footer />
 
       {/* CSS Styles */}
       <style jsx global>{`
@@ -837,25 +842,22 @@ export default function Home() {
           overflow: hidden;
         }
 
-        .loader-text-wrapper {
+        .loader-video-wrapper {
+          width: auto;
+          height: 70vh;
+          border-radius: 0px;
+          overflow: hidden;
           display: flex;
-          justify-content: center;
           align-items: center;
-          gap: 4px;
-          max-width: 100%;
-          padding: 0 var(--space-4);
-          box-sizing: border-box;
+          justify-content: center;
         }
 
-        .loader-letter {
-          font-family: var(--font-mazin), var(--font-display), sans-serif;
-          font-size: clamp(3.5rem, 8vw, 7.5rem);
-          font-weight: 900;
-          color: #FFC700;
-          text-shadow: 3px 3px 0px #8A1F0C, 6px 6px 0px rgba(0, 0, 0, 0.3);
-          display: inline-block;
-          user-select: none;
-          transform-origin: center bottom;
+        .loader-video {
+          width: auto;
+          height: 70vh;
+          max-height: 70vh;
+          object-fit: contain;
+          display: block;
         }
 
         @media (max-width: 992px) {
