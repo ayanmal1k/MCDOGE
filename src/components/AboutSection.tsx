@@ -69,10 +69,32 @@ function CanvasMorphIcon({
   const [isHovered, setIsHovered] = useState(false);
   const pointsIconRef = useRef<{ x: number; y: number }[]>([]);
   const pointsLetterRef = useRef<{ x: number; y: number }[]>([]);
+  const jumpsIconRef = useRef<boolean[]>([]);
+  const jumpsLetterRef = useRef<boolean[]>([]);
 
   useEffect(() => {
-    pointsIconRef.current = samplePoints(iconPath);
-    pointsLetterRef.current = samplePoints(letterPath);
+    const ptsIcon = samplePoints(iconPath);
+    const ptsLetter = samplePoints(letterPath);
+    pointsIconRef.current = ptsIcon;
+    pointsLetterRef.current = ptsLetter;
+
+    // Detect jump indices separately for icon and letter to prevent cross-contamination distortion
+    const jumpsIcon: boolean[] = [];
+    const jumpsLetter: boolean[] = [];
+    for (let i = 0; i < N_POINTS; i++) {
+      if (i === 0) {
+        jumpsIcon.push(false);
+        jumpsLetter.push(false);
+        continue;
+      }
+      const distIcon = ptsIcon.length > i ? Math.hypot(ptsIcon[i].x - ptsIcon[i-1].x, ptsIcon[i].y - ptsIcon[i-1].y) : 0;
+      const distLetter = ptsLetter.length > i ? Math.hypot(ptsLetter[i].x - ptsLetter[i-1].x, ptsLetter[i].y - ptsLetter[i-1].y) : 0;
+
+      jumpsIcon.push(distIcon > 20);
+      jumpsLetter.push(distLetter > 20);
+    }
+    jumpsIconRef.current = jumpsIcon;
+    jumpsLetterRef.current = jumpsLetter;
   }, [iconPath, letterPath]);
 
   useEffect(() => {
@@ -84,7 +106,12 @@ function CanvasMorphIcon({
 
     const pointsIcon = pointsIconRef.current;
     const pointsLetter = pointsLetterRef.current;
+    const jumpsIcon = jumpsIconRef.current;
+    const jumpsLetter = jumpsLetterRef.current;
     if (pointsIcon.length === 0 || pointsLetter.length === 0) return;
+
+    // Dynamically apply contour jumps depending on which shape we are closer to
+    const jumps = progress < 0.5 ? jumpsIcon : jumpsLetter;
 
     const width = 48;
     const height = 48;
@@ -100,7 +127,11 @@ function CanvasMorphIcon({
     for (let i = 1; i < N_POINTS; i++) {
       const x = pointsIcon[i].x + (pointsLetter[i].x - pointsIcon[i].x) * progress;
       const y = pointsIcon[i].y + (pointsLetter[i].y - pointsIcon[i].y) * progress;
-      ctx.lineTo(x * 0.48, y * 0.48);
+      if (jumps[i]) {
+        ctx.moveTo(x * 0.48, y * 0.48);
+      } else {
+        ctx.lineTo(x * 0.48, y * 0.48);
+      }
     }
 
     ctx.closePath();

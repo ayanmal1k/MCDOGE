@@ -858,14 +858,14 @@ export default function Home() {
 
           .hero-grid {
             grid-template-columns: 1fr;
-            min-height: 100vh;
+            min-height: auto;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
           }
 
           .hero-content {
             max-width: 100%;
-            padding: var(--space-8) var(--space-5) var(--space-8) var(--space-5);
+            padding: 24px var(--space-5) var(--space-8) var(--space-5);
             align-items: center;
             text-align: center;
           }
