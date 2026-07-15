@@ -193,7 +193,7 @@ export default function Navbar() {
         .btn-buy-nav {
           display: inline-flex;
           align-items: center;
-          background: linear-gradient(135deg, #DD1021 0%, #FA5D29 100%);
+          background: #DD1021;
           color: #ffffff;
           padding: 12px 28px;
           border-radius: 9999px;
@@ -273,7 +273,7 @@ export default function Navbar() {
           display: flex;
           justify-content: center;
           align-items: center;
-          background: linear-gradient(135deg, #DD1021 0%, #FA5D29 100%);
+          background: #DD1021;
           color: #ffffff;
           padding: 12px 24px;
           border-radius: 9999px;
