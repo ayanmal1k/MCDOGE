@@ -22,12 +22,12 @@ const mazin = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "MCDOGE — The Meme That Serves Smiles",
-  description: "Get your uniform ready and join the delivery fleet. MCDOGE is a community-driven meme token on Solana cooking up the freshest memes and locked liquidity.",
-  keywords: ["MCDOGE", "Solana memecoin", "McDonalds Doge", "sol memecoin", "locked liquidity", "crypto meme"],
+  title: "MCDOGE — The Happiest Restaurant in Crypto",
+  description: "Welcome to MCDOGE, the happiest restaurant in crypto. We serve original characters, daily episodes, fresh memes, and a community where everyone has a seat at the table.",
+  keywords: ["MCDOGE", "crypto restaurant", "Solana meme coin", "McDonalds Doge", "MCDOGE characters", "MCDOGE episodes", "sol memecoin"],
   openGraph: {
-    title: "MCDOGE — The Meme That Serves Smiles",
-    description: "Get your uniform ready and join the delivery fleet. MCDOGE is a community-driven meme token on Solana cooking up the freshest memes and locked liquidity.",
+    title: "MCDOGE — The Happiest Restaurant in Crypto",
+    description: "Welcome to MCDOGE, the happiest restaurant in crypto. We serve original characters, daily episodes, fresh memes, and a community where everyone has a seat at the table.",
     url: "https://mcdoge.xyz",
     siteName: "MCDOGE",
     images: [
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MCDOGE — The Meme That Serves Smiles",
-    description: "Get your uniform ready and join the delivery fleet. MCDOGE is a community-driven meme token on Solana cooking up the freshest memes and locked liquidity.",
+    title: "MCDOGE — The Happiest Restaurant in Crypto",
+    description: "Welcome to MCDOGE, the happiest restaurant in crypto. We serve original characters, daily episodes, fresh memes, and a community where everyone has a seat at the table.",
     images: ["/logo.png"],
     creator: "@mcdogeintern1",
   },

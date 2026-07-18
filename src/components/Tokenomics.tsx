@@ -83,25 +83,25 @@ export default function Tokenomics() {
       label: "Liquidity Pool (LP)",
       pct: "80%",
       color: "#22c55e",
-      desc: "Locked and burned permanently. Zero rug risk, full degen safety.",
+      desc: "Locked and burned permanently. Safe kitchen, clean cooking, zero rug risk.",
     },
     {
-      label: "Marketing & CEX Listings",
+      label: "Marketing & Franchising",
       pct: "10%",
       color: "#f97316",
-      desc: "Reserved for major tier-1 exchanges, media reach, and promotions.",
+      desc: "Reserved for tier-1 exchange integrations, animated episodes, and global campaigns.",
     },
     {
-      label: "Community Airdrops",
+      label: "Customer Rewards & Airdrops",
       pct: "5%",
       color: "#eab308",
-      desc: "Distributed back to our most active burgers, contributors, and loyal community.",
+      desc: "Distributed back to our most active guests, contributors, and loyal family.",
     },
     {
-      label: "Core Development",
+      label: "Kitchen Dev & Expansion",
       pct: "5%",
       color: "#a855f7",
-      desc: "Allocated for technology scaling, franchise system, and expansion funding.",
+      desc: "Allocated for technology scaling, character design, and restaurant franchise expansion.",
     },
   ];
 

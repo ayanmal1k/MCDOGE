@@ -18,26 +18,26 @@ export default function HowToBuySection() {
   const steps: Step[] = [
     {
       id: 0,
-      title: "CREATE A WALLET",
-      desc: "Download Phantom or your wallet of choice from the App Store or Google Play Store for free. Desktop users can install the Google Chrome extension.",
+      title: "GET YOUR WALLET READY",
+      desc: "Download Phantom or your wallet of choice for free from the App Store or Google Play Store. Setup your secure seed phrase to grab a seat at the table.",
       imgSrc: "/roadmap1.png",
     },
     {
       id: 1,
-      title: "GET SOME SOL",
-      desc: "Ensure you have SOL in your wallet to swap for $MCDOGE. You can buy SOL directly inside Phantom, transfer from another wallet, or withdraw from any exchange.",
+      title: "LOAD UP ON SOL",
+      desc: "Buy SOL inside Phantom, transfer from another wallet, or withdraw from an exchange to pay for your kitchen orders.",
       imgSrc: "/roadmap2.png",
     },
     {
       id: 2,
-      title: "VISIT RAYDIUM",
-      desc: "Connect your wallet to Raydium.io or Jupiter (jup.ag) via your built-in browser. Paste the official $MCDOGE contract address to load the trading pair.",
+      title: "VISIT THE KITCHEN",
+      desc: "Head over to Raydium.io or Jupiter (jup.ag) via your wallet's built-in browser. Paste the official $MCDOGE address to load the recipe.",
       imgSrc: "/roadmap3.png",
     },
     {
       id: 3,
-      title: "SWAP FOR $MCDOGE",
-      desc: "Enter the amount of SOL you wish to swap. Review transaction details, set slippage to auto/1%, click Swap, and confirm in your wallet. Welcome to the crew!",
+      title: "ORDER YOUR $MCDOGE",
+      desc: "Swap your SOL for $MCDOGE. Set slippage to auto/1% and accept the transaction. Welcome to the happiest restaurant in crypto!",
       imgSrc: "/roadmap4.png",
     },
   ];

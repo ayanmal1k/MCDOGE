@@ -392,15 +392,15 @@ export default function Home() {
                 </span>
               </motion.h1>
 
-              {/* Subheadline (THE MEME THAT SERVES SMILES) */}
+              {/* Subheadline (THE HAPPIEST RESTAURANT IN CRYPTO) */}
               <motion.h2 variants={itemVariants} className="hero-subheadline-mcdoge">
-                THE MEME THAT<br />
-                <span className="text-yellow">SERVES</span> SMILES
+                THE HAPPIEST<br />
+                <span className="text-yellow">RESTAURANT</span> IN CRYPTO
               </motion.h2>
 
               {/* Description */}
               <motion.p variants={itemVariants} className="hero-description-mcdoge">
-                A community-driven meme token on <span className="text-solana">Solana</span>.
+                This isn't just another meme coin. This is the happiest restaurant in crypto. Original characters, daily episodes, fresh memes, and a community where everyone has a seat at the table. Every day, a new story begins. Welcome home. Grab a seat, enjoy the ride, and join the MCDOGE family.
               </motion.p>
 
               {/* Buttons Row */}
@@ -665,17 +665,12 @@ export default function Home() {
 
         .hero-description-mcdoge {
           font-family: var(--font-body), sans-serif;
-          font-size: 1.45rem;
-          font-weight: 500;
-          color: #ffffff;
-          line-height: 1.4;
+          font-size: 1.18rem;
+          font-weight: 400;
+          color: #e2e2e7;
+          line-height: 1.65;
           margin-top: 4px;
-          max-width: 600px;
-        }
-
-        .hero-description-mcdoge .text-solana {
-          color: #AB9FF2;
-          font-weight: 600;
+          max-width: 640px;
         }
 
         .hero-buttons {

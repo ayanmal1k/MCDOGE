@@ -1,4 +1,4 @@
-# 🍔 MCDOGE — The Meme That Serves Smiles 🐶
+# 🍔 MCDOGE — The Happiest Restaurant in Crypto 🐶
 
 [![Solana](https://img.shields.io/badge/Network-Solana-black?style=for-the-badge&logo=solana&logoColor=9945FF)](https://solana.com)
 [![Next.js](https://img.shields.io/badge/Framework-Next.js%2016-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
@@ -6,11 +6,11 @@
 [![TypeScript](https://img.shields.io/badge/Language-TypeScript-black?style=for-the-badge&logo=typescript&logoColor=3178C6)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-Welcome to **MCDOGE** (also known as *McGoogles*), a premium, high-fidelity landing page for the community-driven memecoin on Solana. Inspired by the legendary **McDonald's x Dogecoin** narrative, MCDOGE is cooking up the freshest memes, locked liquidity, and a sleek interactive Web experience.
+Welcome to **MCDOGE**, the happiest restaurant in crypto. Inspired by the legendary **McDonald's x Dogecoin** narrative, MCDOGE is a community-driven restaurant concept on Solana serving original characters, daily animated episodes, fresh memes, and a community where everyone has a seat at the table.
 
 <div align="center">
   <img src="public/logo.png" alt="MCDOGE Logo" width="200" style="border-radius: 50%; box-shadow: 0 10px 30px rgba(255, 199, 0, 0.3); border: 4px solid #FFC700;" />
-  <h3>"Get your uniform ready and join the delivery fleet."</h3>
+  <h3>"This isn't just another meme coin. Welcome home. Grab a seat."</h3>
 </div>
 
 ---
@@ -45,6 +45,12 @@ Welcome to **MCDOGE** (also known as *McGoogles*), a premium, high-fidelity land
 This frontend is designed to **wow** users at first sight, implementing high-end interaction design and animations:
 
 - **🎭 Interactive Canvas Morphing**: Custom canvas-based typography icons that dynamically morph between McDonald's / Solana themed SVGs and letters (`M-C-D-O-G-E`) on hover.
+  - **M**: The Happiest Restaurant (Serving smiles and joy daily)
+  - **C**: Original Characters (Meet our custom-designed kitchen crew)
+  - **D**: Daily Episodes (Watch the kitchen drama and comedy unfold)
+  - **O**: Fresh Memes (Cooked up fresh in our Web3 kitchen)
+  - **G**: A Seat at the Table (Inclusive community with zero hierarchy)
+  - **E**: Welcome Home (Every builder, driver, and guest matters)
 - **🌀 Smooth Scrolling**: Integrated with **Lenis** smooth scroll for ultra-fluid viewport traversal.
 - **⚡ GSAP & Framer Motion Orchestration**: Seamless micro-interactions, page scroll-reveal animations, and stagger effects.
 - **🌌 Ambient Particle Canvas**: A lightweight canvas particle background that reacts dynamically to the user's cursor.
@@ -73,25 +79,25 @@ MCDOGE operates on a transparent and safe token model with **1,000,000,000 (1 Bi
         <td><strong>Liquidity Pool (LP)</strong></td>
         <td>80%</td>
         <td>🟢 Green</td>
-        <td>Locked and burned permanently. Zero rug risk, full degen safety.</td>
+        <td>Locked and burned permanently. Safe kitchen, clean cooking, zero rug risk.</td>
       </tr>
       <tr>
-        <td><strong>Marketing &amp; CEX Listings</strong></td>
+        <td><strong>Marketing &amp; Franchising</strong></td>
         <td>10%</td>
         <td>🟠 Orange</td>
-        <td>Reserved for tier-1 exchange integrations and viral marketing campaigns.</td>
+        <td>Reserved for tier-1 exchange integrations, animated episodes, and global campaigns.</td>
       </tr>
       <tr>
-        <td><strong>Community Airdrops</strong></td>
+        <td><strong>Customer Rewards &amp; Airdrops</strong></td>
         <td>5%</td>
         <td>🟡 Yellow</td>
-        <td>Distributed back to active contributors, meme creators, and loyal holders.</td>
+        <td>Distributed back to our most active guests, contributors, and loyal family.</td>
       </tr>
       <tr>
-        <td><strong>Core Development</strong></td>
+        <td><strong>Kitchen Dev &amp; Expansion</strong></td>
         <td>5%</td>
         <td>🟣 Purple</td>
-        <td>Reserved for technology scaling, ecosystem features, and developer funding.</td>
+        <td>Allocated for technical scaling, character design, and restaurant franchise expansion.</td>
       </tr>
     </tbody>
   </table>
@@ -101,30 +107,30 @@ MCDOGE operates on a transparent and safe token model with **1,000,000,000 (1 Bi
 
 ## 🛍️ How to Buy Guide
 
-Getting your hands on a fresh bag of `$MCDOGE` is simple:
+Ordering a fresh bag of `$MCDOGE` is simple:
 
 <div align="center">
   <table style="border: none;">
     <tr>
       <td width="25%" align="center">
         <img src="public/roadmap1.png" width="100"/><br/>
-        <strong>1. Create a Wallet</strong><br/>
-        <small>Download Phantom or your wallet of choice for free from the App Store or Chrome Extension Webstore.</small>
+        <strong>1. Get Wallet Ready</strong><br/>
+        <small>Download Phantom or your wallet of choice for free from the App Store or Google Play Store. Setup your seed phrase.</small>
       </td>
       <td width="25%" align="center">
         <img src="public/roadmap2.png" width="100"/><br/>
-        <strong>2. Acquire SOL</strong><br/>
-        <small>Purchase Solana (SOL) inside Phantom, or deposit from an exchange (Binance, Coinbase, Kraken, etc.) to your address.</small>
+        <strong>2. Load Up on SOL</strong><br/>
+        <small>Buy Solana (SOL) inside Phantom, or deposit from an exchange (Binance, Coinbase, Kraken, etc.) to pay for kitchen orders.</small>
       </td>
       <td width="25%" align="center">
         <img src="public/roadmap3.png" width="100"/><br/>
-        <strong>3. Visit Raydium / Jupiter</strong><br/>
-        <small>Connect your wallet to Jupiter (jup.ag) or Raydium.io. Paste the MCDOGE Contract Address into the token swap selector.</small>
+        <strong>3. Visit the Kitchen</strong><br/>
+        <small>Head to Jupiter (jup.ag) or Raydium.io via your wallet's built-in browser. Paste the official $MCDOGE address to load the recipe.</small>
       </td>
       <td width="25%" align="center">
         <img src="public/roadmap4.png" width="100"/><br/>
-        <strong>4. Swap for $MCDOGE</strong><br/>
-        <small>Confirm details, set slippage tolerance to Auto/1%, execute the Swap, and accept the txn. Welcome to the crew! 🍟</small>
+        <strong>4. Order your $MCDOGE</strong><br/>
+        <small>Confirm details, set slippage to Auto/1%, and swap your SOL. Welcome to the happiest restaurant in crypto!</small>
       </td>
     </tr>
   </table>
@@ -139,7 +145,7 @@ Getting your hands on a fresh bag of `$MCDOGE` is simple:
 
 ## 🛠️ Tech Stack & Info
 
-MCDOGE is powered by a modern, ultra-responsive modern web development stack:
+MCDOGE is powered by a modern, ultra-responsive web development stack:
 
 - **Framework**: [Next.js 16.2.10](https://nextjs.org/) (App Router, Server-side metadata optimization)
 - **Runtime Library**: [React 19.2.4](https://react.dev/)
@@ -222,27 +228,27 @@ npm run start
 
 - **Phase 1: Order Up! 🍔**
   - Fair launch on Solana with 100% burned LP.
-  - DEX listings & fast-track verification (DexScreener, DEXTools, Solscan).
-  - Daily viral meme preparations and social community takeovers.
-  - Reaching first 1,000+ Happy Meal holders.
+  - DEX listings & verification (DexScreener, DEXTools, Solscan).
+  - Kitchen preparations: Launching original characters and social portals.
+  - Welcoming the first 1,000+ guests to their seats.
 
-- **Phase 2: MCDelivery Engine 🚀**
-  - Strategic KOL partnerships & aggressive marketing loops.
+- **Phase 2: Kitchen Expansion 🚀**
+  - Strategic marketing integrations & aggressive publicity loops.
   - CoinGecko and CoinMarketCap listings.
-  - Community meme competitions and daily custom content drops.
-  - Reaching 5,000+ loyal doge delivery drivers.
+  - Debut of daily animated episodes and custom character memes.
+  - Filling the dining room: Reaching 5,000+ active table guests.
 
-- **Phase 3: Franchising the Narrative 📈**
-  - Centralized Exchange (CEX) listings.
-  - Real-world community campaigns wearing official MCDOGE merch.
-  - Custom NFT collection representing the MCDOGE delivery fleet.
-  - Growing the global crew to 15,000+ active members.
+- **Phase 3: Franchising the Brand 📈**
+  - First wave of Centralized Exchange (CEX) listings.
+  - Real-world community campaigns with official MCDOGE restaurant merch.
+  - Custom NFT membership passes representing the MCDOGE kitchen crew.
+  - Growing our global family to 15,000+ active seats at the table.
 
-- **Phase 4: To the Moon & Beyond 🌕**
-  - Narrative takeover: mainstream social media campaigns.
-  - Integrating MCDOGE into crypto payment gateways for fast food outlets.
-  - Tier 1 Centralized Exchange listings.
-  - Global meme domination and financial freedom smiles.
+- **Phase 4: Global Franchise Domination 🌕**
+  - Mainstream animated episodes and narrative takeover.
+  - Integrating MCDOGE into crypto payment gateways for food & beverages.
+  - Tier 1 Centralized Exchange integrations.
+  - Spreading financial freedom smiles to dining rooms worldwide.
 
 ---
 

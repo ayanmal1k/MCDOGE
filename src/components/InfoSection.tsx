@@ -123,8 +123,8 @@ export default function InfoSection() {
       <div className="info-orb orb-2" />
 
       <div className="info-section-header">
-        <span className="info-subtitle">// Ecosystem Pillars</span>
-        <h2 className="info-title">Why McGoogles?</h2>
+        <span className="info-subtitle">// Welcome Home</span>
+        <h2 className="info-title">Inside the Kitchen</h2>
       </div>
 
       <div className="info-grid">
@@ -139,11 +139,11 @@ export default function InfoSection() {
             <div className="icon-wrapper icon-community">
               <span className="material-symbols-outlined">groups</span>
             </div>
-            <div className="card-badge-glow community-badge">/ DEGENS ASSEMBLE</div>
-            <h3 className="card-heading">Strong Community</h3>
+            <div className="card-badge-glow community-badge">/ THE FAMILY TABLE</div>
+            <h3 className="card-heading">A Seat at the Table</h3>
             <p className="card-text" style={{ maxWidth: "680px" }}>
-              Built by degens, for degens. A collective movement powering McGoogles
-              to new heights. No hierarchies, just pure decentralization.
+              A community where everyone has a seat at the table. Built by the family, for the family. 
+              Grab a seat, enjoy the ride, and join the MCDOGE family. No hierarchies, just pure collaboration.
             </p>
           </div>
         </div>
@@ -159,10 +159,10 @@ export default function InfoSection() {
             <div className="icon-wrapper icon-meme">
               <span className="material-symbols-outlined">star</span>
             </div>
-            <div className="card-badge-glow meme-badge">/ THE LEGEND</div>
-            <h3 className="card-heading">Unique Meme Narrative</h3>
+            <div className="card-badge-glow meme-badge">/ THE CREW</div>
+            <h3 className="card-heading">Original Characters</h3>
             <p className="card-text">
-              A story you'll never forget. Blending financial disruption with ultimate comedy.
+              Meet our unique, custom-designed kitchen crew starring in our daily episodes and fresh restaurant memes.
             </p>
           </div>
         </div>
@@ -178,10 +178,10 @@ export default function InfoSection() {
             <div className="icon-wrapper icon-exposure">
               <span className="material-symbols-outlined">trending_up</span>
             </div>
-            <div className="card-badge-glow exposure-badge">/ MASS ADOPTION</div>
-            <h3 className="card-heading">Growing Exposure</h3>
+            <div className="card-badge-glow exposure-badge">/ DAILY EPISODES</div>
+            <h3 className="card-heading">New Stories Daily</h3>
             <p className="card-text">
-              More memes. More reach. More McGoogles.
+              Every day, a new story begins. Watch the comedy and kitchen chaos unfold in real-time.
             </p>
 
             {/* Premium Animated SVG Line Chart */}
@@ -216,11 +216,11 @@ export default function InfoSection() {
           <div className="card-grid-pattern" />
           <div className="info-card-inner flex-row-layout">
             <div className="card-text-side">
-              <div className="card-badge-glow solana-badge">/ THE BASE LAYER</div>
-              <h3 className="card-heading">Built on Solana</h3>
+              <div className="card-badge-glow solana-badge">/ THE RESTAURANT ENGINE</div>
+              <h3 className="card-heading">Solana Kitchen Base</h3>
               <p className="card-text">
-                Fast. Cheap. Scalable. Powering the restaurant empire and instant transactions
-                with sub-second finality and near-zero gas costs.
+                Fast. Cheap. Scalable. Solana powers our restaurant infrastructure, enabling 
+                lightning-fast trades and sub-cent transaction fees.
               </p>
             </div>
 
