@@ -667,7 +667,7 @@ export default function Home() {
           font-family: var(--font-body), sans-serif;
           font-size: 1.18rem;
           font-weight: 400;
-          color: #e2e2e7;
+          color: #a0a0ab;
           line-height: 1.65;
           margin-top: 4px;
           max-width: 640px;

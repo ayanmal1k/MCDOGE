@@ -137,13 +137,13 @@ export default function InfoSection() {
           <div className="card-grid-pattern" />
           <div className="info-card-inner">
             <div className="icon-wrapper icon-community">
-              <span className="material-symbols-outlined">groups</span>
+              <span className="material-symbols-outlined">table_restaurant</span>
             </div>
             <div className="card-badge-glow community-badge">/ THE FAMILY TABLE</div>
             <h3 className="card-heading">A Seat at the Table</h3>
             <p className="card-text" style={{ maxWidth: "680px" }}>
-              A community where everyone has a seat at the table. Built by the family, for the family. 
-              Grab a seat, enjoy the ride, and join the MCDOGE family. No hierarchies, just pure collaboration.
+              A community where everyone has a seat at the table. We build together with transparency, 
+              execution, and zero hierarchies. Grab a seat, enjoy the ride, and join the MCDOGE family.
             </p>
           </div>
         </div>
@@ -157,7 +157,7 @@ export default function InfoSection() {
           <div className="card-grid-pattern" />
           <div className="info-card-inner">
             <div className="icon-wrapper icon-meme">
-              <span className="material-symbols-outlined">star</span>
+              <span className="material-symbols-outlined">face</span>
             </div>
             <div className="card-badge-glow meme-badge">/ THE CREW</div>
             <h3 className="card-heading">Original Characters</h3>
@@ -176,12 +176,12 @@ export default function InfoSection() {
           <div className="card-grid-pattern" />
           <div className="info-card-inner">
             <div className="icon-wrapper icon-exposure">
-              <span className="material-symbols-outlined">trending_up</span>
+              <span className="material-symbols-outlined">smart_display</span>
             </div>
             <div className="card-badge-glow exposure-badge">/ DAILY EPISODES</div>
-            <h3 className="card-heading">New Stories Daily</h3>
+            <h3 className="card-heading">Daily Episodes</h3>
             <p className="card-text">
-              Every day, a new story begins. Watch the comedy and kitchen chaos unfold in real-time.
+              Every day, a new story begins. Tune in daily to watch the comedy, drama, and fun unfold in the MCDOGE kitchen.
             </p>
 
             {/* Premium Animated SVG Line Chart */}
