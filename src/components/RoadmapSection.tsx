@@ -18,7 +18,7 @@ export default function RoadmapSection() {
     {
       id: 0,
       number: "PHASE 1",
-      title: "ORDER UP! 🍔",
+      title: "ORDER UP!",
       videoSrc: "/Roadmap/1.webm",
       goals: [
         "Fair launch on Solana with 100% burned LP.",
@@ -30,7 +30,7 @@ export default function RoadmapSection() {
     {
       id: 1,
       number: "PHASE 2",
-      title: "KITCHEN EXPANSION 🚀",
+      title: "KITCHEN EXPANSION",
       videoSrc: "/Roadmap/2.webm",
       goals: [
         "Strategic marketing integrations & aggressive publicity loops.",
@@ -42,7 +42,7 @@ export default function RoadmapSection() {
     {
       id: 2,
       number: "PHASE 3",
-      title: "FRANCHISING THE BRAND 📈",
+      title: "FRANCHISING THE BRAND",
       videoSrc: "/Roadmap/3.webm",
       goals: [
         "First wave of Centralized Exchange (CEX) listings.",
@@ -54,7 +54,7 @@ export default function RoadmapSection() {
     {
       id: 3,
       number: "PHASE 4",
-      title: "GLOBAL FRANCHISE DOMINATION 🌕",
+      title: "GLOBAL FRANCHISE DOMINATION",
       videoSrc: "/Roadmap/4.webm",
       goals: [
         "Mainstream animated episodes and narrative takeover.",
@@ -185,7 +185,7 @@ export default function RoadmapSection() {
           display: flex;
           gap: 20px;
           width: 100%;
-          height: 580px;
+          height: 600px;
           margin-top: 20px;
         }
 
@@ -325,24 +325,30 @@ export default function RoadmapSection() {
 
         .card-phase-title {
           font-family: var(--font-mazin), var(--font-display), sans-serif;
-          font-size: 2.1rem;
+          font-size: 1.35rem;
           font-weight: 900;
           color: #ffffff;
           text-transform: uppercase;
           letter-spacing: 0.02em;
           white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
           transition: color 0.4s ease, font-size 0.4s ease;
         }
 
         .roadmap-card.active .card-phase-title {
           color: #FFC700;
+          font-size: 2.1rem;
+          white-space: normal;
+          overflow: visible;
         }
 
         /* Expanding Goals list container */
         .card-goals-wrapper {
           opacity: 0;
           max-height: 0;
-          width: 440px;
+          width: 100%;
+          max-width: 440px;
           overflow: hidden;
           transition: opacity 0.4s ease, max-height 0.85s cubic-bezier(0.16, 1, 0.3, 1), margin-top 0.4s ease;
         }
@@ -417,7 +423,8 @@ export default function RoadmapSection() {
 
           .roadmap-card.active {
             flex: none;
-            height: 380px;
+            height: auto;
+            min-height: 380px;
           }
 
           .card-content {
@@ -427,6 +434,8 @@ export default function RoadmapSection() {
           .card-phase-title {
             font-size: 1.6rem;
             margin-top: 8px;
+            white-space: normal;
+            overflow: visible;
           }
 
           .roadmap-card.active .card-phase-title {
@@ -438,7 +447,7 @@ export default function RoadmapSection() {
           }
 
           .roadmap-card.active .card-goals-wrapper {
-            max-height: 280px;
+            max-height: 1000px;
             margin-top: 16px;
           }
           
@@ -465,7 +474,8 @@ export default function RoadmapSection() {
           }
 
           .roadmap-card.active {
-            height: 420px;
+            height: auto;
+            min-height: 420px;
           }
 
           .goal-text {
