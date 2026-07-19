@@ -80,12 +80,12 @@ export default function SocialSection() {
           <span className="social-tag">// TELEGRAM & TWITTER</span>
           <h2 className="social-heading">Join MCGOOGLES</h2>
           <p className="social-description">
-            Be part of the restaurant franchise revolution. Follow our official accounts 
+            Be part of the restaurant franchise revolution. Follow our official accounts
             for live updates, meme contests, and token swap drops.
           </p>
 
           <div className="social-buttons-wrapper">
-            <a href="https://x.com/mcdogeintern1?s=11" target="_blank" rel="noopener noreferrer" className="social-btn btn-x" aria-label="X Twitter">
+            <a href="https://x.com/mcdogecryprest" target="_blank" rel="noopener noreferrer" className="social-btn btn-x" aria-label="X Twitter">
               <XIcon />
               <span>TWITTER</span>
             </a>
@@ -104,9 +104,9 @@ export default function SocialSection() {
             <div className="solana-line" />
             <div className="solana-branding-row">
               <span className="solana-lbl">POWERED BY SOLANA</span>
-              <img 
-                src="/solana-sol-logo.png" 
-                alt="Solana Logo" 
+              <img
+                src="/solana-sol-logo.png"
+                alt="Solana Logo"
                 className="solana-logo-img"
               />
             </div>
@@ -117,9 +117,9 @@ export default function SocialSection() {
         <div className="social-right-col">
           <div className="sleep-image-frame">
             <div className="sleep-glow" />
-            <img 
-              src="/sleep.png" 
-              alt="McGoogles Frog sleeping on cash" 
+            <img
+              src="/sleep.png"
+              alt="McGoogles Frog sleeping on cash"
               className="sleep-frog-asset"
             />
           </div>

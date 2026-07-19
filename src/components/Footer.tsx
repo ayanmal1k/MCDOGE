@@ -44,7 +44,7 @@ export default function Footer() {
 
             {/* Twitter / X */}
             <a
-              href="https://x.com/mcdogeintern1?s=11"
+              href="https://x.com/mcdogecryprest"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-social-btn"

@@ -503,7 +503,7 @@ export default function Home() {
 
               {/* Social Circle Links */}
               <motion.div variants={itemVariants} className="social-links">
-                <a href="https://x.com/mcdogeintern1?s=11" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="X (Twitter)">
+                <a href="https://x.com/mcdogecryprest" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="X (Twitter)">
                   <XIcon />
                 </a>
                 <a href="https://t.me/ysctop" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Telegram">

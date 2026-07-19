@@ -26,7 +26,7 @@ export default function SocialsSection() {
       id: 1,
       name: "X / TWITTER",
       subtitle: "Follow us for viral fast-food memes",
-      url: "https://x.com/mcdogeintern1?s=11",
+      url: "https://x.com/mcdogecryprest",
       colorClass: "twitter",
       icon: (
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">

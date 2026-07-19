@@ -34,7 +34,7 @@ Welcome to **MCDOGE**, the happiest restaurant in crypto. Inspired by the legend
 | :--- | :--- |
 | **🌐 Website** | [mcdoge.xyz](https://mcdoge.xyz) |
 | **📈 Live Chart** | [DexScreener Chart](https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz) |
-| **🐦 X / Twitter** | [@mcdogeintern1](https://x.com/mcdogeintern1?s=11) |
+| **🐦 X / Twitter** | [@mcdogecryprest](https://x.com/mcdogecryprest) |
 | **💬 Telegram** | [Join official Crew Chatroom](https://t.me/ysctop) |
 | **📝 Smart Contract (Solana)** | `9fQdMbjsYg7vNjnXULwzdmoCS4napNoWya5Zf7YAfhaa` |
 
