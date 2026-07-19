@@ -38,7 +38,7 @@ export default function SocialsSection() {
       id: 2,
       name: "DEXSCREENER",
       subtitle: "Watch the trading chart live",
-      url: "https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz",
+      url: "https://dexscreener.com/solana/9ZMuy8RsLo4PjTCmnVcCAg5M2ADfNNWLSGaqzKvqHpDZ",
       colorClass: "dex",
       icon: (
         <img

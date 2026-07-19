@@ -499,7 +499,7 @@ export default function Home() {
                 <a href="https://t.me/ysctop" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Telegram">
                   <TelegramIcon />
                 </a>
-                <a href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Dexscreener">
+                <a href="https://dexscreener.com/solana/9ZMuy8RsLo4PjTCmnVcCAg5M2ADfNNWLSGaqzKvqHpDZ" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Dexscreener">
                   <img src="/decscreenr logo.png" alt="Dexscreener" style={{ width: 22, height: 22, objectFit: "contain" }} />
                 </a>
               </motion.div>

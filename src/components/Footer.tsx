@@ -57,7 +57,7 @@ export default function Footer() {
 
             {/* DexScreener */}
             <a
-              href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz"
+              href="https://dexscreener.com/solana/9ZMuy8RsLo4PjTCmnVcCAg5M2ADfNNWLSGaqzKvqHpDZ"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-social-btn dex-btn"

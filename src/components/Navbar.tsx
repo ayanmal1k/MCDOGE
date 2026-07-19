@@ -74,7 +74,7 @@ export default function Navbar() {
           {/* Buy Button */}
           <div className="nav-buy-desktop">
             <Magnetic>
-              <a href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz" target="_blank" rel="noopener noreferrer" className="btn-buy-nav">
+              <a href="https://dexscreener.com/solana/9ZMuy8RsLo4PjTCmnVcCAg5M2ADfNNWLSGaqzKvqHpDZ" target="_blank" rel="noopener noreferrer" className="btn-buy-nav">
                 BUY $MCDOGE
               </a>
             </Magnetic>
@@ -107,7 +107,7 @@ export default function Navbar() {
                 <a href="#roadmap" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>Roadmap</a>
                 <a href="#chart" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>Chart</a>
                 <a href="#community" className="nav-link-mobile" onClick={() => setIsMobileMenuOpen(false)}>Community</a>
-                <a href="https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz" target="_blank" rel="noopener noreferrer" className="btn-buy-nav-mobile" onClick={() => setIsMobileMenuOpen(false)}>
+                <a href="https://dexscreener.com/solana/9ZMuy8RsLo4PjTCmnVcCAg5M2ADfNNWLSGaqzKvqHpDZ" target="_blank" rel="noopener noreferrer" className="btn-buy-nav-mobile" onClick={() => setIsMobileMenuOpen(false)}>
                   BUY $MCDOGE
                 </a>
               </nav>

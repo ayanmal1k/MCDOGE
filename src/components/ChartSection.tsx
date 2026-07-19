@@ -22,7 +22,7 @@ export default function ChartSection() {
   const [priceFlash, setPriceFlash] = useState<"up" | "down" | null>(null);
   const prevPriceRef = useRef<string | null>(null);
   
-  const pairAddress = "9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz";
+  const pairAddress = "9ZMuy8RsLo4PjTCmnVcCAg5M2ADfNNWLSGaqzKvqHpDZ";
   const apiEndpoint = `https://api.dexscreener.com/latest/dex/pairs/solana/${pairAddress}`;
   const embedUrl = `https://dexscreener.com/solana/${pairAddress}?embed=1&theme=dark&trades=0&info=0`;
 
