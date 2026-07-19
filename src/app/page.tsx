@@ -240,27 +240,17 @@ export default function Home() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleVideoEnded = () => {
-    setIsLoading(false);
-    document.body.style.overflow = "";
-  };
-
   useEffect(() => {
     // Lock scroll during loading
     document.body.style.overflow = "hidden";
 
-    const enterTimer = setTimeout(() => {
-      setIsEntering(false);
-    }, 1200);
-
-    // Safety fallback timer (8 seconds max)
+    // Show banner loader for exactly 1 second
     const loadTimer = setTimeout(() => {
       setIsLoading(false);
       document.body.style.overflow = "";
-    }, 8000);
+    }, 1000);
 
     return () => {
-      clearTimeout(enterTimer);
       clearTimeout(loadTimer);
       document.body.style.overflow = "";
     };
@@ -338,14 +328,14 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
             className="loader-overlay"
           >
-            <div className="loader-video-wrapper">
-              <video
-                src="/takeaway.webm"
-                autoPlay
-                muted
-                playsInline
-                onEnded={handleVideoEnded}
-                className="loader-video"
+            <div className="loader-image-wrapper">
+              <motion.img
+                src="/banner.jpeg"
+                alt="MCDOGE Banner"
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="loader-image"
               />
             </div>
           </motion.div>
@@ -837,22 +827,38 @@ export default function Home() {
           overflow: hidden;
         }
 
-        .loader-video-wrapper {
-          width: auto;
-          height: 70vh;
-          border-radius: 0px;
-          overflow: hidden;
+        .loader-image-wrapper {
+          width: 100vw;
+          height: 100vh;
           display: flex;
           align-items: center;
           justify-content: center;
+          background-color: #080808;
+          padding: 5vw;
         }
 
-        .loader-video {
+        .loader-image {
+          max-width: 100%;
+          max-height: 100%;
           width: auto;
-          height: 70vh;
-          max-height: 70vh;
-          object-fit: contain;
+          height: auto;
           display: block;
+          object-fit: contain;
+          border-radius: 24px;
+          box-shadow: 0 0 70px rgba(255, 199, 0, 0.4);
+          border: 3px solid rgba(255, 199, 0, 0.5);
+          transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+          .loader-image-wrapper {
+            padding: 4vw;
+          }
+          .loader-image {
+            border-radius: 12px;
+            box-shadow: 0 0 35px rgba(255, 199, 0, 0.25);
+            border-width: 1.5px;
+          }
         }
 
         @media (max-width: 992px) {

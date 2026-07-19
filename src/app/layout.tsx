@@ -32,10 +32,10 @@ export const metadata: Metadata = {
     siteName: "MCDOGE",
     images: [
       {
-        url: "/logo.png",
-        width: 512,
-        height: 512,
-        alt: "MCDOGE Logo",
+        url: "/banner.jpeg",
+        width: 1280,
+        height: 853,
+        alt: "MCDOGE Banner",
       },
     ],
     locale: "en_US",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MCDOGE — The Happiest Restaurant in Crypto",
     description: "Welcome to MCDOGE, the happiest restaurant in crypto. We serve original characters, daily episodes, fresh memes, and a community where everyone has a seat at the table.",
-    images: ["/logo.png"],
+    images: ["/banner.jpeg"],
     creator: "@mcdogecryprest",
   },
   icons: {
