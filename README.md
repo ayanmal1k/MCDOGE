@@ -32,7 +32,6 @@ Welcome to **MCDOGE**, the happiest restaurant in crypto. Inspired by the legend
 
 | Platform | Link |
 | :--- | :--- |
-| **🌐 Website** | [mcdoge.xyz](https://mcdoge.xyz) |
 | **📈 Live Chart** | [DexScreener Chart](https://dexscreener.com/solana/9zmuy8rslo4pjtcmnvccag5m2adfnnwlsgaqzkvqhpdz) |
 | **🐦 X / Twitter** | [@mcdogecryprest](https://x.com/mcdogecryprest) |
 | **💬 Telegram** | [Join official Crew Chatroom](https://t.me/ysctop) |
