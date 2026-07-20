@@ -117,7 +117,7 @@ MCDOGE is powered by a modern, ultra-responsive web development stack:
 The layout of the codebase is modular, prioritizing clean separation of visual sections and animation logics:
 
 ```text
-mcgoogles-empty/
+mcdoge-empty/
 ├── public/                     # Static media assets
 │   ├── Roadmap/                # WebM videos for Roadmap phases
 │   ├── logo.png                # Primary token logo
@@ -152,7 +152,7 @@ To run this project locally, follow these steps:
 ### 1. Clone the repository
 ```bash
 git clone <repository-url>
-cd mcgoogles-empty
+cd mcdoge-empty
 ```
 
 ### 2. Install dependencies
