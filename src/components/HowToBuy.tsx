@@ -42,7 +42,7 @@ export default function HowToBuy() {
     {
       num: "04",
       badge: "PLACE THE ORDER",
-      title: "Swap SOL for $MCGOOGLES",
+      title: "Swap SOL for $MCDOGE",
       desc: "Paste the official contract address (CA) in the token search field. Enter the amount of SOL you want to swap, adjust slippage, and confirm the order.",
       video: "/Roadmap/4.webm",
       hasCA: true,
@@ -51,7 +51,7 @@ export default function HowToBuy() {
       num: "05",
       badge: "SECURE THE BURGER",
       title: "Enjoy Your Yield",
-      desc: "Transaction complete! You are now a proud shareholder in the McGoogles restaurant franchise. Keep your tokens safe and watch the fries stack up.",
+      desc: "Transaction complete! You are now a proud shareholder in the MCDOGE restaurant franchise. Keep your tokens safe and watch the fries stack up.",
       video: "/Roadmap/5.webm",
     },
   ];
@@ -127,7 +127,7 @@ export default function HowToBuy() {
 
       <div className="how-to-buy-header">
         <span className="buy-subtitle">// ORDER FLOW</span>
-        <h2 className="buy-title">How To Buy $MCGOOGLES</h2>
+        <h2 className="buy-title">How To Buy $MCDOGE</h2>
       </div>
 
       <div className="how-to-buy-content">
