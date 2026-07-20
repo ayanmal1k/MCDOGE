@@ -19,7 +19,6 @@ Welcome to **MCDOGE**, the happiest restaurant in crypto. Inspired by the legend
 
 - [🚀 Live Links](#-live-links)
 - [✨ Key Features](#-key-features)
-- [📊 Tokenomics](#-tokenomics)
 - [🛍️ How to Buy Guide](#️-how-to-buy-guide)
 - [🛠️ Tech Stack & Info](#️-tech-stack--info)
 - [📂 Repository Structure](#-repository-structure)
@@ -56,51 +55,6 @@ This frontend is designed to **wow** users at first sight, implementing high-end
 - **🎯 Custom Cursor**: A branded cursor tracking user movement with magnetic attractions to key buttons.
 - **📱 Fluid WebM Accordion Roadmap**: Full-screen interactive roadmap panels shifting layouts smoothly with embedded background loops.
 - **🎫 CA One-Click Copy Bar**: Convenient smart contract address copy container with instant visual copy feedback.
-
----
-
-## 📊 Tokenomics
-
-MCDOGE operates on a transparent and safe token model with **1,000,000,000 (1 Billion) total supply** of `$MCDOGE`.
-
-<div align="center">
-  <table>
-    <thead>
-      <tr>
-        <th>Allocation Sector</th>
-        <th>Percentage</th>
-        <th>Color Indicator</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Liquidity Pool (LP)</strong></td>
-        <td>80%</td>
-        <td>🟢 Green</td>
-        <td>Locked and burned permanently. Safe kitchen, clean cooking, zero rug risk.</td>
-      </tr>
-      <tr>
-        <td><strong>Marketing &amp; Franchising</strong></td>
-        <td>10%</td>
-        <td>🟠 Orange</td>
-        <td>Reserved for tier-1 exchange integrations, animated episodes, and global campaigns.</td>
-      </tr>
-      <tr>
-        <td><strong>Customer Rewards &amp; Airdrops</strong></td>
-        <td>5%</td>
-        <td>🟡 Yellow</td>
-        <td>Distributed back to our most active guests, contributors, and loyal family.</td>
-      </tr>
-      <tr>
-        <td><strong>Kitchen Dev &amp; Expansion</strong></td>
-        <td>5%</td>
-        <td>🟣 Purple</td>
-        <td>Allocated for technical scaling, character design, and restaurant franchise expansion.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
 ---
 
@@ -183,8 +137,7 @@ mcgoogles-empty/
 │       ├── Navbar.tsx          # Sticky responsive header navigation
 │       ├── RoadmapSection.tsx  # Expanding WebM accordion panel roadmap
 │       ├── SmoothScroll.tsx    # Lenis configuration setup
-│       ├── SocialsSection.tsx  # Links cards grid and loop video
-│       └── Tokenomics.tsx      # SVG interactive donut chart + allocation list
+│       └── SocialsSection.tsx  # Links cards grid and loop video
 ├── tsconfig.json               # TypeScript compiler options
 ├── package.json                # Project scripts and dependencies
 └── next.config.ts              # Next.js configurations
