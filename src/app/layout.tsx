@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora, Syne } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 
@@ -72,6 +73,11 @@ export default function RootLayout({
         <SmoothScroll>
           {children}
         </SmoothScroll>
+        <Script
+          src="https://cdn.zanderio.ai/widget/loader.js"
+          data-id="wdg_FtW2TSjGxEzg3KvZvb6lqEZg"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
