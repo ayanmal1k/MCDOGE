@@ -31,3 +31,4 @@ next-env.d.ts
 
 # subprojects to exclude from push
 /MCGOOGLES/
+config.bat
